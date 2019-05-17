@@ -1,0 +1,11 @@
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Proyecto Final Estocasticos.csprojAssemblyReference.cache
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Simulador_Casino.resources
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Proyecto Final Estocasticos.csproj.GenerateResource.cache
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Proyecto Final Estocasticos.csproj.CoreCompileInputs.cache
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ModoAutomatico.resources
