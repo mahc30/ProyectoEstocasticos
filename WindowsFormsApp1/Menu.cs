@@ -29,7 +29,17 @@ namespace WindowsFormsApp1
         {
             ModoAutomatico obj = new ModoAutomatico();
             obj.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -13,7 +13,8 @@ namespace WindowsFormsApp1
 {
     public partial class Simulador_Casino : Form
     {
-        private float saldo, apuesta;
+
+        private float saldo;
         private int prob;
         private short intento = 0;
 
@@ -153,7 +154,7 @@ namespace WindowsFormsApp1
         {
             Menu obj = new Menu();
             obj.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Simulador_Casino_Load(object sender, EventArgs e)
@@ -166,7 +167,6 @@ namespace WindowsFormsApp1
 
             if (float.TryParse(TextBoxSaldo.Text, out saldo) && float.TryParse(TextBoxApu.Text, out float b) && float.TryParse(TextBoxProb.Text, out float d)) //Obtener el Datos
             {
-                button1.Enabled = true;
                 Apuesta();
                 chart1.ChartAreas["ChartArea1"].AxisX.Title = "Intento";
                 chart1.ChartAreas["ChartArea1"].AxisY.Title = "Saldo";
@@ -178,10 +178,9 @@ namespace WindowsFormsApp1
                 LabelError.Text = "Algun Dato ingresado es inválido";
             }
             
-               
-         
         }
 
+       
 
         //chart1.DataSource = dt;
 

@@ -176,18 +176,11 @@ namespace WindowsFormsApp1
             chart1.Legends.Clear();
         }
 
-        //private void btnMenu_Click(object sender, EventArgs e)
-        //{
-        //    Menu obj = new Menu();
-        //    obj.Show();
-        //    this.Hide();
-        //}
-
         private void btnMenu_Click_1(object sender, EventArgs e)
         {
             Menu obj = new Menu();
             obj.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void label6_Click(object sender, EventArgs e)

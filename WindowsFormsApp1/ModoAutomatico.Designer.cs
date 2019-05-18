@@ -258,6 +258,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1279, 724);
+            this.ControlBox = false;
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btreiniciar);
             this.Controls.Add(this.cbEcon);

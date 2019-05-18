@@ -244,6 +244,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1275, 713);
+            this.ControlBox = false;
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btreiniciar);
             this.Controls.Add(this.TextBoxSaldo);
