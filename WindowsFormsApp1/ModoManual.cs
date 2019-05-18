@@ -75,6 +75,7 @@ namespace WindowsFormsApp1
             int random;
             Random rand = new Random();
             random = rand.Next(0, 100);
+            chart1.Legends.Clear();
 
             if (float.TryParse(TextBoxSaldo.Text, out saldo) && float.TryParse(TextBoxApu.Text, out va) && float.TryParse(TextBoxProb.Text, out pg)) //Obtener el Datos
             {
@@ -109,6 +110,11 @@ namespace WindowsFormsApp1
                         LabelEstado.Text = "Pierde";
                         sac = float.Parse(LabelsaldoActual.Text);
                         LabelsaldoActual.Text = Convert.ToString(sac - va);
+                        if(sac <= 0)
+                        {
+                            button1.Enabled = false;
+                        }
+
                         return sac;
                     }
                 }
@@ -126,13 +132,44 @@ namespace WindowsFormsApp1
         }
 
         int x = 1;
+
+        private void btreiniciar_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            TextBoxSaldo.Enabled = true;
+            TextBoxSaldo.Text = "";
+            TextBoxApu.Text = "";
+            TextBoxProb.Text = "";
+            LabelError.Text = "";
+            x = 1;
+            intento = 0;
+            chart1.Series.Clear();
+            chart1.Series.Add("Series1");
+            chart1.Series["Series1"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            chart1.Legends.Clear();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Menu obj = new Menu();
+            obj.Show();
+            this.Hide();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Apuesta();
-            chart1.ChartAreas["ChartArea1"].AxisX.Title = "Intento";
-            chart1.ChartAreas["ChartArea1"].AxisY.Title = "Saldo";
-            chart1.Series["Series1"].Points.AddXY(x, float.Parse(LabelsaldoActual.Text));
-            x++;
+
+            if (float.TryParse(TextBoxSaldo.Text, out saldo) && float.TryParse(TextBoxApu.Text, out float b) && float.TryParse(TextBoxProb.Text, out float d)) //Obtener el Datos
+            {
+                button1.Enabled = true;
+                Apuesta();
+                chart1.ChartAreas["ChartArea1"].AxisX.Title = "Intento";
+                chart1.ChartAreas["ChartArea1"].AxisY.Title = "Saldo";
+                chart1.Series["Series1"].Points.AddXY(x, float.Parse(LabelsaldoActual.Text));
+                x++;
+            }
+            
+               
          
         }
 

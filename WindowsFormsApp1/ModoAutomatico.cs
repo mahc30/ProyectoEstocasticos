@@ -16,12 +16,13 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
         int x = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             float va, pg, saldo;
             Random rand = new Random();
-
+            chart1.Legends.Clear();
 
             if (float.TryParse(tbSaldo.Text, out saldo)) // Verifica que el saldo ingresado sea correcto
             {
@@ -70,6 +71,7 @@ namespace WindowsFormsApp1
                             if (float.Parse(LabelsaldoActual.Text) <= 0) //Si el saldo llega a 0 deja de apostar
                             {
                                 LabelMsg.Text = "Perdiste todo tu saldo :(";
+                                button1.Enabled = false;
                                 break;
                             }
                         }
@@ -158,6 +160,34 @@ namespace WindowsFormsApp1
             {
                 cbDer.Checked = false;
             }
+        }
+
+        private void btreiniciar_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            tbSaldo.Enabled = true;
+            tbSaldo.Text = "";
+            tbApu.Text = "";
+            LabelError.Text = "";
+            x = 1;
+            chart1.Series.Clear();
+            chart1.Series.Add("Series1");
+            chart1.Series["Series1"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            chart1.Legends.Clear();
+        }
+
+        //private void btnMenu_Click(object sender, EventArgs e)
+        //{
+        //    Menu obj = new Menu();
+        //    obj.Show();
+        //    this.Hide();
+        //}
+
+        private void btnMenu_Click_1(object sender, EventArgs e)
+        {
+            Menu obj = new Menu();
+            obj.Show();
+            this.Hide();
         }
     }
 }

@@ -50,6 +50,8 @@
             this.cbCons = new System.Windows.Forms.CheckBox();
             this.cbDer = new System.Windows.Forms.CheckBox();
             this.cbEcon = new System.Windows.Forms.CheckBox();
+            this.btreiniciar = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +71,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 255);
+            this.chart1.Location = new System.Drawing.Point(12, 260);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -77,13 +79,13 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(886, 401);
+            this.chart1.Size = new System.Drawing.Size(1229, 401);
             this.chart1.TabIndex = 33;
             this.chart1.Text = "BBBBBB";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(659, 204);
+            this.button1.Location = new System.Drawing.Point(576, 207);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 32;
@@ -103,7 +105,7 @@
             // LabelMsg
             // 
             this.LabelMsg.AutoSize = true;
-            this.LabelMsg.Location = new System.Drawing.Point(99, 200);
+            this.LabelMsg.Location = new System.Drawing.Point(64, 207);
             this.LabelMsg.Name = "LabelMsg";
             this.LabelMsg.Size = new System.Drawing.Size(0, 17);
             this.LabelMsg.TabIndex = 28;
@@ -229,11 +231,33 @@
             this.cbEcon.UseVisualStyleBackColor = true;
             this.cbEcon.CheckedChanged += new System.EventHandler(this.cbEcon_CheckedChanged);
             // 
+            // btreiniciar
+            // 
+            this.btreiniciar.Location = new System.Drawing.Point(693, 204);
+            this.btreiniciar.Name = "btreiniciar";
+            this.btreiniciar.Size = new System.Drawing.Size(75, 23);
+            this.btreiniciar.TabIndex = 59;
+            this.btreiniciar.Text = "Reiniciar";
+            this.btreiniciar.UseVisualStyleBackColor = true;
+            this.btreiniciar.Click += new System.EventHandler(this.btreiniciar_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Location = new System.Drawing.Point(823, 26);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnMenu.TabIndex = 60;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click_1);
+            // 
             // ModoAutomatico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 684);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.btreiniciar);
             this.Controls.Add(this.cbEcon);
             this.Controls.Add(this.cbDer);
             this.Controls.Add(this.cbCons);
@@ -254,6 +278,7 @@
             this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModoAutomatico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModoAutomatico";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
@@ -280,5 +305,7 @@
         private System.Windows.Forms.CheckBox cbCons;
         private System.Windows.Forms.CheckBox cbDer;
         private System.Windows.Forms.CheckBox cbEcon;
+        private System.Windows.Forms.Button btreiniciar;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

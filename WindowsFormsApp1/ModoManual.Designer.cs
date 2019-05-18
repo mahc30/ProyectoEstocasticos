@@ -49,6 +49,8 @@
             this.TextBoxSaldo = new System.Windows.Forms.TextBox();
             this.LabelSaldo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btreiniciar = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,7 +143,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(63, 265);
+            this.chart1.Location = new System.Drawing.Point(68, 272);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -149,7 +151,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(886, 401);
+            this.chart1.Size = new System.Drawing.Size(1166, 401);
             this.chart1.TabIndex = 13;
             this.chart1.Text = "BBBBBB";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -215,13 +217,35 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "$";
             // 
+            // btreiniciar
+            // 
+            this.btreiniciar.Location = new System.Drawing.Point(833, 201);
+            this.btreiniciar.Name = "btreiniciar";
+            this.btreiniciar.Size = new System.Drawing.Size(75, 23);
+            this.btreiniciar.TabIndex = 60;
+            this.btreiniciar.Text = "Reiniciar";
+            this.btreiniciar.UseVisualStyleBackColor = true;
+            this.btreiniciar.Click += new System.EventHandler(this.btreiniciar_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Location = new System.Drawing.Point(952, 32);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnMenu.TabIndex = 61;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // Simulador_Casino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1068, 741);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.btreiniciar);
             this.Controls.Add(this.TextBoxSaldo);
             this.Controls.Add(this.LabelSaldo);
             this.Controls.Add(this.label6);
@@ -268,6 +292,8 @@
         private System.Windows.Forms.TextBox TextBoxSaldo;
         private System.Windows.Forms.Label LabelSaldo;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btreiniciar;
+        private System.Windows.Forms.Button btnMenu;
     }
 }
 

@@ -9,3 +9,4 @@ E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Proyecto Final 
 E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ModoAutomatico.resources
+E:\Uni\Estocásticos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Menu.resources
