@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(336, 204);
+            this.label2.Location = new System.Drawing.Point(370, 204);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // LabelProbabilidadDeGanar
             // 
             this.LabelProbabilidadDeGanar.AutoSize = true;
-            this.LabelProbabilidadDeGanar.Location = new System.Drawing.Point(74, 135);
+            this.LabelProbabilidadDeGanar.Location = new System.Drawing.Point(65, 135);
             this.LabelProbabilidadDeGanar.Name = "LabelProbabilidadDeGanar";
             this.LabelProbabilidadDeGanar.Size = new System.Drawing.Size(155, 17);
             this.LabelProbabilidadDeGanar.TabIndex = 2;
@@ -75,7 +75,7 @@
             // LabelEstado
             // 
             this.LabelEstado.AutoSize = true;
-            this.LabelEstado.Location = new System.Drawing.Point(543, 204);
+            this.LabelEstado.Location = new System.Drawing.Point(636, 204);
             this.LabelEstado.Name = "LabelEstado";
             this.LabelEstado.Size = new System.Drawing.Size(88, 17);
             this.LabelEstado.TabIndex = 3;
@@ -84,7 +84,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(75, 204);
+            this.label5.Location = new System.Drawing.Point(65, 204);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 17);
             this.label5.TabIndex = 4;
@@ -93,7 +93,7 @@
             // LabelCuota
             // 
             this.LabelCuota.AutoSize = true;
-            this.LabelCuota.Location = new System.Drawing.Point(208, 204);
+            this.LabelCuota.Location = new System.Drawing.Point(217, 204);
             this.LabelCuota.Name = "LabelCuota";
             this.LabelCuota.Size = new System.Drawing.Size(45, 17);
             this.LabelCuota.TabIndex = 5;
@@ -102,7 +102,7 @@
             // LabelsaldoActual
             // 
             this.LabelsaldoActual.AutoSize = true;
-            this.LabelsaldoActual.Location = new System.Drawing.Point(437, 204);
+            this.LabelsaldoActual.Location = new System.Drawing.Point(471, 204);
             this.LabelsaldoActual.Name = "LabelsaldoActual";
             this.LabelsaldoActual.Size = new System.Drawing.Size(44, 17);
             this.LabelsaldoActual.TabIndex = 6;
@@ -111,7 +111,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(372, 90);
+            this.label8.Location = new System.Drawing.Point(217, 85);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(16, 17);
             this.label8.TabIndex = 7;
@@ -120,7 +120,7 @@
             // LabelApuesta
             // 
             this.LabelApuesta.AutoSize = true;
-            this.LabelApuesta.Location = new System.Drawing.Point(126, 85);
+            this.LabelApuesta.Location = new System.Drawing.Point(65, 85);
             this.LabelApuesta.Name = "LabelApuesta";
             this.LabelApuesta.Size = new System.Drawing.Size(103, 17);
             this.LabelApuesta.TabIndex = 8;
@@ -129,9 +129,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(714, 198);
+            this.button1.Location = new System.Drawing.Point(1159, 103);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 31);
             this.button1.TabIndex = 9;
             this.button1.Text = "Apostar";
             this.button1.UseVisualStyleBackColor = true;
@@ -202,7 +202,7 @@
             // LabelSaldo
             // 
             this.LabelSaldo.AutoSize = true;
-            this.LabelSaldo.Location = new System.Drawing.Point(126, 38);
+            this.LabelSaldo.Location = new System.Drawing.Point(65, 35);
             this.LabelSaldo.Name = "LabelSaldo";
             this.LabelSaldo.Size = new System.Drawing.Size(87, 17);
             this.LabelSaldo.TabIndex = 22;
@@ -211,7 +211,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(372, 43);
+            this.label6.Location = new System.Drawing.Point(217, 41);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(16, 17);
             this.label6.TabIndex = 21;
@@ -219,9 +219,9 @@
             // 
             // btreiniciar
             // 
-            this.btreiniciar.Location = new System.Drawing.Point(833, 201);
+            this.btreiniciar.Location = new System.Drawing.Point(1159, 66);
             this.btreiniciar.Name = "btreiniciar";
-            this.btreiniciar.Size = new System.Drawing.Size(75, 23);
+            this.btreiniciar.Size = new System.Drawing.Size(75, 31);
             this.btreiniciar.TabIndex = 60;
             this.btreiniciar.Text = "Reiniciar";
             this.btreiniciar.UseVisualStyleBackColor = true;
@@ -229,9 +229,9 @@
             // 
             // btnMenu
             // 
-            this.btnMenu.Location = new System.Drawing.Point(952, 32);
+            this.btnMenu.Location = new System.Drawing.Point(1159, 29);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnMenu.Size = new System.Drawing.Size(75, 31);
             this.btnMenu.TabIndex = 61;
             this.btnMenu.Text = "Menu";
             this.btnMenu.UseVisualStyleBackColor = true;
@@ -243,7 +243,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(1275, 713);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btreiniciar);
             this.Controls.Add(this.TextBoxSaldo);
@@ -268,6 +268,7 @@
             this.Name = "Simulador_Casino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulador Apuestas";
+            this.Load += new System.EventHandler(this.Simulador_Casino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

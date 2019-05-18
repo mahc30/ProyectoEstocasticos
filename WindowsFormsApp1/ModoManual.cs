@@ -156,6 +156,11 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
+        private void Simulador_Casino_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -167,6 +172,10 @@ namespace WindowsFormsApp1
                 chart1.ChartAreas["ChartArea1"].AxisY.Title = "Saldo";
                 chart1.Series["Series1"].Points.AddXY(x, float.Parse(LabelsaldoActual.Text));
                 x++;
+            }
+            else
+            {
+                LabelError.Text = "Algun Dato ingresado es inválido";
             }
             
                
